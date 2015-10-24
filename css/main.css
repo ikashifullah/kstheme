@@ -1,0 +1,113 @@
+body {
+ font-size: 14px !important;
+}
+.navbar { margin-bottom: 0 !important; border-radius: 0; border: none; }
+.social-bar { border-bottom: 1px solid #3f4953; }
+.affix { top: 0px; width:100%;}
+#social-bar-links li { border-left: 1px solid #3f4953; }
+#social-bar-links li:last-child{ border-right: 1px solid #3f4953;	margin-right: 5px; }
+.navbar-lower { height: 88px !important;}
+.mh-menu-bar { margin-top: 20px;}
+.mh-logo {padding-top: 0;}
+
+
+/* Show Dropdown on hover */
+.parent-dropdown:hover >.dropdown-menu { display: block;float: right !important;}
+.navbar-right .dropdown-menu {right: auto;}
+.navbar-lower .navbar-nav>li { margin-right: 1px; }
+.dropdown-menu li {padding-top: 10px;}
+
+.navbar-inverse { background-color: #29333D}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #ED7401}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #ED7401;}
+.dropdown-menu { background-color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #ED7401}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #FFFFFF}
+.navbar-inverse .navbar-brand { color: #FFFFFF}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+.twitter-bg >a:hover{background-color: #00aced !important;}
+.facebook-bg >a:hover{background-color: #3b5998 !important;}
+.googleplus-bg >a:hover{background-color: #dd4b39 !important;}
+.linkedin-bg >a:hover{background-color: #007bb5 !important;}
+.youtube-bg >a:hover{background-color: #bb0000 !important;}
+
+.mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }
+.main-content-wrap {float: left; background: yellow; min-height: 300px;}
+.right-sidebar { float: right; background: green; min-height: 300px;}
+
+/* Multi-Level Drop Down Styles Start */
+/*
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+} 
+*/
+/* Multi-Level Drop Down Styles End */
+
+@media (min-width:320px) and (max-width:480px){
+	#social-bar-links {
+		display: none;
+	}			
+	.navbar-lower {
+		height: auto !important;
+	}
+}
+
+@media (min-width: 600px) {
+}

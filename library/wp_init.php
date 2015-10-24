@@ -162,8 +162,8 @@ register_sidebar( array(
     'description'  => __( 'Widgets in this area will be shown on the footer side.', 'mortgagehouse' ),
 	'before_widget' => '<div class="row widgets-wraps">',
 	'after_widget' => '</div>',
-    'before_title' => '<div class="widgettitle_wrap col-md-12"><h2 class="widgettitle"><span>',
-    'after_title'  => '</span></h2></div>',
+    'before_title' => '<div class="widgettitle_wrap col-md-12">',
+    'after_title'  => '</div>',
 ) );
 
 register_sidebar( array(

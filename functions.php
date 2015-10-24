@@ -22,12 +22,13 @@ define( 'KSTHEME_THEME_DIR', get_template_directory_uri() );
 define( 'KSTHEME_SYS_DIR', KSTHEME_APP_PATH. '/library' );
 define( 'KSTHEME_IMG_DIR', KSTHEME_THEME_DIR."/images");   // Images folder
 define("KSTHEME_CLS_DIR", KSTHEME_SYS_DIR."/classes");	// Classes
+define("KSTHEME_WG_DIR", KSTHEME_SYS_DIR."/widgets");	// Widgets Folder
 
 // Includes : Basic or default functions and included files
 require_once KSTHEME_SYS_DIR.'/define.php';
+require_once KSTHEME_SYS_DIR."/load.php";      // loading functions, classes, shotcode, widgets
 require_once KSTHEME_SYS_DIR.'/enqueue.php';
 require_once KSTHEME_SYS_DIR.'/wp_init.php';
-require_once KSTHEME_CLS_DIR .'/wp_bootstrap_navwalker.php';
 
 
 

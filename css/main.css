@@ -53,7 +53,8 @@ body {
 .footer-menu-cont ul {margin: 0; padding: 0; list-style: none;}
 .footer-menu-cont ul li{float: left; margin-right: 23px;}
 .footer-menu-cont ul li a{ color: #858e95; text-decoration: none; }
-.footer-menu-cont ul li a:hover{ color: #ED7401; }
+.footer-menu-cont ul li a:hover{ color: #ed9c4e; }
+.footer-top-widgets {padding: 10px 0;}
 
 /* Multi-Level Drop Down Styles Start */
 /*

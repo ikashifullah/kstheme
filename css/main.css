@@ -6,7 +6,7 @@ body {
 .affix { top: 0px; width:100%;}
 #social-bar-links li { border-left: 1px solid #3f4953; }
 #social-bar-links li:last-child{ border-right: 1px solid #3f4953;	margin-right: 5px; }
-.navbar-lower { height: 88px !important;}
+.navbar-lower { height: 88px !important; z-index: 1;}
 .mh-menu-bar { margin-top: 20px;}
 .mh-logo {padding-top: 0;}
 
@@ -47,6 +47,13 @@ body {
 .mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }
 .main-content-wrap {float: left; background: yellow; min-height: 300px;}
 .right-sidebar { float: right; background: green; min-height: 300px;}
+.footer-top { background: #2f3945; }
+.site-footer { background: #192229; padding: 40px 0;}
+.site-footer  p { color: #959ea5; margin: 0;}
+.footer-menu-cont ul {margin: 0; padding: 0; list-style: none;}
+.footer-menu-cont ul li{float: left; margin-right: 23px;}
+.footer-menu-cont ul li a{ color: #858e95; text-decoration: none; }
+.footer-menu-cont ul li a:hover{ color: #ED7401; }
 
 /* Multi-Level Drop Down Styles Start */
 /*

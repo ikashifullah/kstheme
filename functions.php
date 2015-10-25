@@ -23,6 +23,7 @@ define( 'KSTHEME_SYS_DIR', KSTHEME_APP_PATH. '/library' );
 define( 'KSTHEME_IMG_DIR', KSTHEME_THEME_DIR."/images");   // Images folder
 define("KSTHEME_CLS_DIR", KSTHEME_SYS_DIR."/classes");	// Classes
 define("KSTHEME_WG_DIR", KSTHEME_SYS_DIR."/widgets");	// Widgets Folder
+define("KSTHEME_ADM_DIR", KSTHEME_SYS_DIR."/admin");	// Widgets Folder
 
 // Includes : Basic or default functions and included files
 require_once KSTHEME_SYS_DIR.'/define.php';

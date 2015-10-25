@@ -195,3 +195,81 @@ register_sidebar( array(
     'before_title' => '<div class="widgettitle_wrap col-md-12"><h2 class="widgettitle"><span>',
     'after_title'  => '</span></h2></div>',
 ) );
+
+
+add_action("init", "setPostType");
+
+function setPostType(){
+
+	// Loan Programs Custom Post Type
+	$labels = array( 
+		'name' => _x( 'Loan Programs', 'loan_program' ),
+		'singular_name' => _x( 'Loan Program', 'loan_program' ),
+		'add_new' => _x( 'Add New', 'loan_program' ),
+		'add_new_item' => _x( 'Add New Loan Program', 'loan_program' ),
+		'edit_item' => _x( 'Edit Loan Program', 'loan_program' ),
+		'new_item' => _x( 'New Loan Program', 'loan_program' ),
+		'view_item' => _x( 'View Loan Program', 'loan_program' ),
+		'search_items' => _x( 'Search Loan Programs', 'loan_program' ),
+		'not_found' => _x( 'No loan programs found', 'loan_program' ),
+		'not_found_in_trash' => _x( 'No loan programs found in Trash', 'loan_program' ),
+		'parent_item_colon' => _x( 'Parent Loan Program:', 'loan_program' ),
+		'menu_name' => _x( 'Loan Programs', 'loan_program' ),
+	);
+
+	register_post_type( 'loan_program', 
+		array( 
+			'labels' => $labels,
+			'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+			'public' => true,
+		)
+	);
+	
+	// Loan Programs Custom Post Type
+	$program_labels = array( 
+		'name' => _x( 'Loan Programs', 'loan_program' ),
+		'singular_name' => _x( 'Loan Program', 'loan_program' ),
+		'add_new' => _x( 'Add New', 'loan_program' ),
+		'add_new_item' => _x( 'Add New Loan Program', 'loan_program' ),
+		'edit_item' => _x( 'Edit Loan Program', 'loan_program' ),
+		'new_item' => _x( 'New Loan Program', 'loan_program' ),
+		'view_item' => _x( 'View Loan Program', 'loan_program' ),
+		'search_items' => _x( 'Search Loan Programs', 'loan_program' ),
+		'not_found' => _x( 'No loan programs found', 'loan_program' ),
+		'not_found_in_trash' => _x( 'No loan programs found in Trash', 'loan_program' ),
+		'parent_item_colon' => _x( 'Parent Loan Program:', 'loan_program' ),
+		'menu_name' => _x( 'Loan Programs', 'loan_program' ),
+	);
+
+	register_post_type( 'loan_program', 
+		array( 
+			'labels' => $program_labels,
+			'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+			'public' => true,
+		)
+	);
+	
+	$services_labels = array( 
+        'name' => _x( 'Services', 'services' ),
+        'singular_name' => _x( 'Service', 'services' ),
+        'add_new' => _x( 'Add New', 'services' ),
+        'add_new_item' => _x( 'Add New Service', 'services' ),
+        'edit_item' => _x( 'Edit Service', 'services' ),
+        'new_item' => _x( 'New Service', 'services' ),
+        'view_item' => _x( 'View Service', 'services' ),
+        'search_items' => _x( 'Search Services', 'services' ),
+        'not_found' => _x( 'No services found', 'services' ),
+        'not_found_in_trash' => _x( 'No services found in Trash', 'services' ),
+        'parent_item_colon' => _x( 'Parent Service:', 'services' ),
+        'menu_name' => _x( 'Services', 'services' ),
+    );
+
+	register_post_type( 'services', 
+		array( 
+			'labels' => $services_labels,
+			'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+			'public' => true,
+		)
+	);
+    
+}

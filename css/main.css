@@ -45,18 +45,29 @@ body {
 .youtube-bg >a:hover{background-color: #bb0000 !important;}
 
 .mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }
-.main-content-wrap {float: left; background: yellow; min-height: 300px;}
+.main-content-wrap {float: left; min-height: 300px;}
 .right-sidebar { float: right; background: green; min-height: 300px;}
 .footer-top { background: #2f3945; }
 .site-footer { background: #192229; padding: 40px 0;}
 .site-footer  p { color: #959ea5; margin: 0;}
-.footer-menu-cont ul {margin: 0; padding: 0; list-style: none;}
+
+.footer-menu-cont ul {margin: 0; padding: 0;}
 .footer-menu-cont ul li{float: left; margin-right: 23px;}
 .footer-menu-cont ul li a{ color: #858e95; text-decoration: none; }
 .footer-menu-cont ul li a:hover{ color: #ed9c4e; }
-.footer-top-widgets {padding: 10px 0;}
+
+.footer-top-widgets {padding: 40px 0;}
 .company-intro {color: #9fa9b5; font-size: 13px;}
 
+.contact-info-details { color: #9fa9b5; font-size: 14px; line-height: 25px; margin: 0; padding: 0; }
+.contact-info-details .fa-lg { font-size: 1.4em; margin-right: 5px; }
+.contact-info-details li a{ color: #9fa9b5; }
+.contact-info-details li a:hover{ color: #ed9c4e; text-decoration: none; }
+
+.contact-info-social {margin: 30px 0 0 0; padding: 0;}
+.contact-info-social li {float: left; margin-right: 3px; }
+.contact-info-social li a{ color: #9da7b1; padding: 14px; border: 1px solid #707a86; border-radius: 2px; }
+.contact-info-social li a:hover{ color: #fff; border: 1px solid #fff;}
 /* Multi-Level Drop Down Styles Start */
 /*
 .dropdown-submenu {

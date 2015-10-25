@@ -29,19 +29,28 @@ class kstheme_company_profile extends WP_Widget {
 		// This is where you run the code and display the output
 		echo '<p class="company-intro">Mel iusto referrentur et. Te paulo possim repudiandae mea, id vim modus labores. Illud oratio phaedrum at sed, eam ut bonorum evertitur. Eos at erant sanctus, nam molestie inimicus expetendis ut. Ius justo veniam homero et, verterem gloriatur interesset et mel. Mei eius<p>';
 		
-		echo '<ul>';
+		echo '<ul class="contact-info-details">';
 
-			printf('<li><i class="fa fa-home"></i> %s</li>', 'Opposite Emirates Towers, Dubai');
+			printf('<li><i class="fa fa-home fa-lg"></i> %s</li>', 'Opposite Emirates Towers, Dubai');
 
-			printf('<li><i class="fa fa-phone-square"></i> %s</li>', '+971 43 550 666');
+			printf('<li><i class="fa fa-phone-square fa-lg"></i> %s</li>', '+971 43 550 666');
 
-			printf('<li><i class="fa fa-envelope"></i> %s</li>', 'info@mortgagehouseuae.com');
+			printf('<li><i class="fa fa-envelope fa-lg"></i> <a href="%s">%s</a></li>', 'mailto:info@mortgagehouseuae.com', 'info@mortgagehouseuae.com');
 
-			printf('<li><i class="fa fa-clock-o"></i> %s</li>', '9:00 am - 6:00 pm');
+			printf('<li><i class="fa fa-clock-o fa-lg"></i> %s</li>', '9:00 am - 6:00 pm');
 
-			printf('<li><i class="fa fa-exclamation-circle"></i> <a href="%s">%s</a></li>', 'http://www.propertyhouseuae.com', 'www.propertyhouseuae.com');
+			printf('<li><i class="fa fa-globe fa-lg"></i> <a href="%s">%s</a></li>', 'http://www.mortgagehouseuae.com', 'www.mortgagehouseuae.com');
 
 		echo '</ul>';
+		
+		echo '<ul class="contact-info-social">
+			<li class="twitter-bg"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+			<li class="facebook-bg"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+			<li class="googleplus-bg"><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+			<li class="linkedin-bg"><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+			<li class="youtube-bg"><a href="#"><i class="fa fa-youtube fa-lg"></i></a></li>
+		</ul>';
+
 		
 		echo $args['after_widget'];
 	}

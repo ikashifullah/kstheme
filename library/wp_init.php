@@ -297,3 +297,57 @@ function setPostType(){
 	);
     
 }
+
+add_shortcode( 'services-shortcode', 'display_services_post_type' );
+
+function display_services_post_type(){
+	$args = array(
+		'post_type' => 'services',
+		'post_status' => 'publish',
+		'posts_per_page' => 4
+	);
+
+	$service_result = '';
+	$query = new WP_Query( $args );
+	if( $query->have_posts() ){
+		
+		while( $query->have_posts() ){
+		$service_result .= '<div class="footer-service-cont">';	
+			$query->the_post();
+			$service_result .= '<h4><a href="'.get_permalink().'">' . get_the_title() . '</a></h4>';
+			$service_result .= '<p>' . get_the_content('',FALSE,'') . '</p>';
+		$service_result .= '</div>';	
+		}
+		
+	}
+	wp_reset_query();
+	return $service_result;
+}
+
+add_shortcode( 'loan-program-shortcode', 'display_loan_program_post_type' );
+
+function display_loan_program_post_type(){
+	$args = array(
+		'post_type' => 'loan_program',
+		'post_status' => 'publish',
+		'posts_per_page' => 4
+	);
+
+	$loan_result = '';
+	$query = new WP_Query( $args );
+	if( $query->have_posts() ){
+		
+		while( $query->have_posts() ){
+		$loan_result .= '<div class="footer-service-cont">';	
+			$query->the_post();
+			$loan_result .= '<h4><a href="'.get_permalink().'">' . get_the_title() . '</a></h4>';
+			$loan_result .= '<p>' . get_the_content('',FALSE,'') . '</p>';
+		$loan_result .= '</div>';	
+		}
+		
+	}
+	wp_reset_query();
+	return $loan_result;
+}
+
+add_filter('widget_text', 'do_shortcode');

@@ -55,7 +55,7 @@ body { font-size: 14px !important; }
 .footer-menu-cont ul li a{ color: #858e95; text-decoration: none; }
 .footer-menu-cont ul li a:hover{ color: #ed9c4e; }
 
-.footer-top-widgets {padding: 40px 0;}
+.footer-top-widgets {padding: 30px 0;}
 .company-intro {color: #9fa9b5; font-size: 13px;}
 
 .contact-info-details { color: #9fa9b5; font-size: 14px; line-height: 25px; margin: 0; padding: 0; }
@@ -83,13 +83,22 @@ body { font-size: 14px !important; }
 
 .carouse-bg { background: #eeeeee; padding: 10px 0; margin-bottom: 20px;}
 
+
 .widgets-wraps {margin-top: 25px;}
+
+.footer-top-widgets .widgets-wraps { margin-left: 0; margin-right: 40px; margin-top: 0;}
+.footer-top-widgets .widgettitle { color: #efefef; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; margin-top: 5px; margin-left: -15px;}
 .pre-approved-cont { background-color: #e0e0e0; padding: 40px 20px; font-size: 18px; border-radius: 15px; }
 .pre-approved-btn { border: 2px solid #41b572; padding: 10px; border-radius: 5px; color: #404040; transition: background-color 0.5s ease;}
 .pre-approved-btn:visited { color: #404040; }
 .pre-approved-btn:hover, .pre-approved-btn:focus  { color: #404040; text-decoration: none; background: #fff;}
 
 .CCM-Widget {background: #b2d9e5;}
+.footer-service-cont{ color: #9fa9b5; border-bottom: 1px solid #676767; margin-top: 17px;}
+.footer-service-cont:last-child{ border: none;}
+.footer-service-cont p {margin-bottom: 15px;}
+.footer-service-cont h4 a  { color: #ccc; text-decoration: none; text-transform: uppercase; font-size: 14px;}
+
 /* Multi-Level Drop Down Styles Start */
 /*
 .dropdown-submenu {

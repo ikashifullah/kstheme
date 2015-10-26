@@ -36,9 +36,11 @@ function loan_program_icon_html( $post) {
 		<select name = "loan_program_icon_font_awesome_tag"  id="loan_program_icon_font_awesome_tag">
 			<?php 
 			$icons = ebor_icons_list();
-			
+			$selected_icon = loan_program_icon_get_meta( 'loan_program_icon_font_awesome_tag' );
 			foreach($icons as $k =>$icon){ ?>
-				<option value="<?php echo $k;?>"> <?php echo $icon; ?></option>
+				
+				<option value="<?php echo $k;?>" <?php selected( $selected_icon, $k ); ?>> <?php echo $icon; ?></option>
+
 			<?php 
 			}
 			?>

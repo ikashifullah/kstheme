@@ -18,12 +18,11 @@ function loan_program_icon_add_meta_box() {
 	
 	$post_types = get_post_types( array( 'public' => true ) );
 	foreach ( $post_types as $post_type ) {
-		if ( 'page' == $post_type || 'post' == $post_type ) {
+		if ( 'page' == $post_type || 'post' == $post_type || 'client-carousel' == $post_type ) {
 			continue;
 		}
-		
-    	    add_meta_box('loan_program_icon-loan-program-icon', __( 'Loan Program icon', 'loan_program_icon' ), 'loan_program_icon_html', 'loan_program', 'side', 'default' );
-        }
+		add_meta_box('loan_program_icon-loan-program-icon', __( 'Loan Program icon', 'loan_program_icon' ), 'loan_program_icon_html', $post_type, 'side', 'default' );
+    }
 }
 add_action( 'add_meta_boxes', 'loan_program_icon_add_meta_box' );
 
@@ -38,8 +37,8 @@ function loan_program_icon_html( $post) {
 			<?php 
 			$icons = ebor_icons_list();
 			
-			foreach($icons as $icon){ ?>
-				<option value="<?php echo $icon;?>"> <?php echo $icon; ?></option>
+			foreach($icons as $k =>$icon){ ?>
+				<option value="<?php echo $k;?>"> <?php echo $icon; ?></option>
 			<?php 
 			}
 			?>

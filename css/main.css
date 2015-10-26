@@ -1,6 +1,5 @@
-body {
- font-size: 14px !important;
-}
+body { font-size: 14px !important; }
+.clear { clear: both;}
 .navbar { margin-bottom: 0 !important; border-radius: 0; border: none; }
 .social-bar { border-bottom: 1px solid #3f4953; }
 .affix { top: 0px; width:100%;}
@@ -45,7 +44,7 @@ body {
 .youtube-bg >a:hover{background-color: #bb0000 !important;}
 
 .mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }
-.main-content-wrap {float: left; min-height: 300px;}
+.main-content-wrap {float: left; min-height: 300px; margin-bottom: 30px; }
 .right-sidebar { float: right; background: green; min-height: 300px;}
 .footer-top { background: #2f3945; }
 .site-footer { background: #192229; padding: 40px 0;}
@@ -68,6 +67,21 @@ body {
 .contact-info-social li {float: left; margin-right: 3px; }
 .contact-info-social li a{ color: #9da7b1; padding: 14px; border: 1px solid #707a86; border-radius: 2px; }
 .contact-info-social li a:hover{ color: #fff; border: 1px solid #fff;}
+
+.programs-heading, .services-heading {font-size: 18px; color: #27ae60; font-weight: bold; margin-bottom: 25px;}
+.services-heading { margin-top: 25px;}
+.programs-cont { margin-bottom: 15px; }
+.program-content { float: left; }
+.program-icon { font-size: 25px; float: left; padding: 0 15px 0 0; vertical-align: top; color: #f55a4e;}
+.program-title { font-size: 18px; }
+.program-title a:visited, .program-title a{ color: #404040; text-decoration: none;}
+.program-text { font-size: 14px; color: #898989; width: 350px;}
+.program-text p { margin-bottom: 8px;}
+.program-text p a { color: #f55a4e; text-decoration: none; }
+.program-title a:hover, .program-title a:focus, .program-text p a:hover, .program-text p a:focus { color: #898989; }
+
+.carouse-bg { background: #eeeeee; padding: 10px 0; margin-bottom: 20px;}
+
 /* Multi-Level Drop Down Styles Start */
 /*
 .dropdown-submenu {

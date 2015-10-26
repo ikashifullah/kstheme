@@ -35,6 +35,14 @@
 	jQuery('.navbar-lower').affix({
 	  offset: {top: 50}
 	});
+	jQuery(document).ready(function() {
+ 
+		jQuery("#owl-example").owlCarousel({
+			autoPlay: true,
+			pagination: false
+		});
+ 
+	});
 </script>
 </body>
 </html>

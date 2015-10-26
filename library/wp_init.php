@@ -271,5 +271,29 @@ function setPostType(){
 			'public' => true,
 		)
 	);
+	
+	$labels = array(
+		'name' => _x( 'Client Carousel Images', 'carousel_image' ),
+		'singular_name' => _x( 'Carousel Image', 'carousel_image' ),
+		'add_new' => _x( 'Add New', 'carousel_image' ),
+		'add_new_item' => _x( 'Add New Carousel Image', 'carousel_image' ),
+		'edit_item' => _x( 'Edit Carousel Image', 'carousel_image' ),
+		'new_item' => _x( 'New Carousel Image', 'carousel_image' ),
+		'view_item' => _x( 'View Carousel Image', 'carousel_image' ),
+		'search_items' => _x( 'Search Carousel Images', 'carousel_image' ),
+		'not_found' => _x( 'No carousel images found', 'carousel_image' ),
+		'not_found_in_trash' => _x( 'No carousel images found in Trash', 'carousel_image' ),
+		'parent_item_colon' => _x( 'Parent Carousel Image:', 'carousel_image' ),
+		'menu_name' => _x( 'Client Carousel', 'carousel_image' ),
+	);
+
+	register_post_type( 'client-carousel', 
+		array(
+			'labels' => $labels,
+			'supports' => array( 'title', 'thumbnail','excerpt' ),
+			'taxonomies' => array( 'category' ),
+			'public' => true,
+		)
+	);
     
 }

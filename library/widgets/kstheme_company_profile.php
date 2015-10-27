@@ -43,14 +43,27 @@ class kstheme_company_profile extends WP_Widget {
 
 		echo '</ul>';
 		
-		echo '<ul class="contact-info-social">
-			<li class="twitter-bg"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-			<li class="facebook-bg"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-			<li class="googleplus-bg"><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
-			<li class="linkedin-bg"><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
-			<li class="youtube-bg"><a href="#"><i class="fa fa-youtube fa-lg"></i></a></li>
-		</ul>';
-
+		$socials = array (
+			'facebook' => 'Facebook',
+			'twitter' => 'Twitter',
+			'google-plus' => 'Google+',
+			'linkedin' => 'LinkedIn',
+			'youtube' => 'YouTube',
+		);
+		
+		$social_output = '<ul class="contact-info-social">';
+		foreach ( $socials as $social_key => $social ) {
+			if ( empty( $instance[ $social_key ] ) ) {
+				continue;
+			}
+			$social_url = $instance[ $social_key ];
+			$social_url = esc_url( $social_url );
+			
+			$social_output .='<li class="'.$social_key.'-bg"><a href="'.$social_url.'" target="_blank"><i class="fa fa-'.$social_key.' fa-lg"></i></a></li>';
+			
+		}
+		$social_output .= '</ul>';
+		echo $social_output;
 		
 		echo $args['after_widget'];
 	}
@@ -64,12 +77,39 @@ class kstheme_company_profile extends WP_Widget {
 		else {
 			$title = __( 'New title', 'mortgagehouse' );
 		}
+		
+		
 		// Widget admin form
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
+		<?php 
+		// 1. Create array for social media
+		$socials = array (
+			'facebook' => 'Facebook',
+			'twitter' => 'Twitter',
+			'google-plus' => 'Google+',
+			'linkedin' => 'LinkedIn',
+			'youtube' => 'YouTube',
+		);
+		foreach($socials as $social_key => $social) {
+		if ( isset( $instance[ $social_key ] ) ) {
+			$social_url = $instance[ $social_key ];
+		}
+		else {
+			$social_url = '';
+		}	
+			
+		?>
+		<p>
+			<label for="<?php echo $this->get_field_id( $social_key ); ?>"><?php _e( $social ); ?></label> 
+			<input class="widefat" id="<?php echo $this->get_field_id( $social_key ); ?>" name="<?php echo $this->get_field_name( $social_key ); ?>" type="text" value="<?php echo esc_attr( $social_url ); ?>" />
+		</p>
+		<?php 
+		}
+		?>
 		
 	<?php 
 	}
@@ -78,8 +118,20 @@ class kstheme_company_profile extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-		return $instance;
+		
+		$socials = array (
+			'facebook' => 'Facebook',
+			'twitter' => 'Twitter',
+			'google-plus' => 'Google+',
+			'linkedin' => 'LinkedIn',
+			'youtube' => 'YouTube',
+		);
+		foreach($socials as $social_key => $social) {
+			$instance[$social_key] = ( ! empty( $new_instance[$social_key] ) ) ?  $new_instance[$social_key]  : '';
 		}
+		
+		return $instance;
+	}
 
 } // Class kstheme_company_profile ends here
 

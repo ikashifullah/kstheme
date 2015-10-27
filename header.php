@@ -34,7 +34,7 @@
 		<nav class="navbar navbar-inverse navbar-static-top">
 		  <div class="container social-bar">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#"><i class="fa fa-mobile fa-lg"></i> Call us today 12354-123</a>
+			  <span class="navbar-brand"><i class="fa fa-mobile fa-lg"></i> Call us today 12354-123</span>
 			</div>
 			<div id="social-bar-links">
 				<ul class="nav navbar-nav navbar-right">

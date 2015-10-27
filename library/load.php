@@ -8,6 +8,7 @@ require_once KSTHEME_CLS_DIR .'/font-awesome-array.php'; // Load the font-awesom
 require_once KSTHEME_WG_DIR .'/kstheme_company_profile.php';
 require_once KSTHEME_WG_DIR .'/kstheme_pre_approved_form.php';
 require_once KSTHEME_WG_DIR .'/kstheme_image_upload.php';
+require_once KSTHEME_WG_DIR .'/kstheme_socials.php';
 
 /** Admin Panel **/
 require_once KSTHEME_ADM_DIR."/post-meta-box.php";

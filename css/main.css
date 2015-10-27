@@ -8,7 +8,8 @@ body { font-size: 14px !important; }
 .navbar-lower { height: 88px !important; z-index: 1;}
 .mh-menu-bar { margin-top: 20px;}
 .mh-logo {padding-top: 0;}
-
+.navbar-brand {font-size: 16px;}
+.navbar-brand i {margin-right: 5px;}
 
 /* Show Dropdown on hover */
 .parent-dropdown:hover >.dropdown-menu { display: block;float: right !important;}
@@ -52,8 +53,8 @@ body { font-size: 14px !important; }
 
 /*.mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }*/
 .mh-header-banner { height: 273px; }
-.main-content-wrap {float: left; min-height: 300px; margin-bottom: 30px; }
-.right-sidebar { float: right; min-height: 400px;}
+.main-content-wrap { min-height: 300px; margin-bottom: 30px; }
+.right-sidebar { min-height: 400px;}
 .footer-top { background: #2f3945; }
 .site-footer { background: #192229; padding: 40px 0;}
 .site-footer  p { color: #959ea5; margin: 0;}
@@ -80,11 +81,11 @@ body { font-size: 14px !important; }
 .programs-heading, .services-heading {font-size: 18px; color: #27ae60; font-weight: bold; margin-bottom: 25px;}
 .services-heading { margin-top: 25px;}
 .programs-cont { margin-bottom: 15px; }
-.program-content { float: left; }
-.program-icon { font-size: 25px; float: left; padding: 0 15px 0 0; vertical-align: top; color: #f55a4e;}
+.program-content { }
+.program-icon { font-size: 25px; padding: 0 15px 0 0; vertical-align: top; color: #f55a4e;}
 .program-title { font-size: 18px; }
 .program-title a:visited, .program-title a{ color: #404040; text-decoration: none;}
-.program-text { font-size: 14px; color: #898989; width: 350px;}
+.program-text { font-size: 14px; color: #898989; }
 .program-text p { margin-bottom: 8px;}
 .program-text p a { color: #f55a4e; text-decoration: none; }
 .program-title a:hover, .program-title a:focus, .program-text p a:hover, .program-text p a:focus { color: #898989; }
@@ -93,11 +94,13 @@ body { font-size: 14px !important; }
 
 
 .widgets-wraps {margin-top: 20px; margin-bottom: 13px;}
+/*.row.widgets-wraps {	margin-left: 0; margin-right:0;	} */
 
 .footer-top-widgets .widgets-wraps { margin-left: 0; margin-right: 40px; margin-top: 0;}
 .footer-top-widgets .widgettitle { color: #efefef; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; margin-top: 5px; margin-left: -15px;}
 .pre-approved-cont { background-color: #e0e0e0; padding: 40px 20px; font-size: 18px; border-radius: 15px; }
-.pre-approved-btn { border: 2px solid #41b572; padding: 10px; border-radius: 5px; color: #404040; transition: background-color 0.5s ease;}
+.pre-approved-cont div {margin-top: 35px;}
+.pre-approved-btn { border: 2px solid #41b572; padding: 10px; border-radius: 5px; margin-top color: #404040; transition: background-color 0.5s ease;}
 .pre-approved-btn:visited { color: #404040; }
 .pre-approved-btn:hover, .pre-approved-btn:focus  { color: #404040; text-decoration: none; background: #fff;}
 
@@ -170,6 +173,18 @@ body { font-size: 14px !important; }
 	}			
 	.navbar-lower {
 		height: auto !important;
+	}
+	.row.widgets-wraps {
+		margin-left: 0; margin-right:0;
+	}
+	.footer-top-widgets .widgets-wraps {
+		margin-left: 15px; margin-right: 15px; 
+	}
+	.navbar-static-top {
+		z-index: 0;
+	}
+	.navbar-toggle {
+		margin-top: -64px;
 	}
 }
 

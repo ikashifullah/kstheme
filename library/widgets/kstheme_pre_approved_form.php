@@ -30,7 +30,7 @@ class kstheme_pre_approved_form extends WP_Widget {
 			// This is where you run the code and display the output
 			//echo '<div class="pre-approved-cont"> <p>Fill out our short online application to get pre-approved in minutes </p>'; 
 			echo '<div class="pre-approved-cont"> <p>'.$instance['pre_app_title'].'</p>'; 
-			printf('<div style="text-align:center"><a href="%s" class="pre-approved-btn">%s</a></div>', 'http://www.propertyhouseuae.com/', 'Get Pre-approved');
+			printf('<div style="text-align:center"><a href="%s" class="pre-approved-btn">%s</a></div>', $instance['pre_app_url'], 'Get Pre-approved');
 			echo '</div>';
 			
 		
@@ -57,6 +57,12 @@ class kstheme_pre_approved_form extends WP_Widget {
 		else {
 			$pre_app_title = '';
 		}
+		if ( isset( $instance[ 'pre_app_url' ] ) ) {
+			$pre_app_url = $instance[ 'pre_app_url' ];
+		}
+		else {
+			$pre_app_url = '';
+		}
 		
 		//$pre_app_title = isset($instance['pre_app_title']) ? $instance['pre_app_title'] : '';
 		// Widget admin form
@@ -68,6 +74,9 @@ class kstheme_pre_approved_form extends WP_Widget {
 			*/ ?>
 			<label for="<?php echo $this->get_field_id('pre_app_title'); ?>">pre-approved Title: </label>
 			<textarea class="widefat" id="<?php echo $this->get_field_id('pre_app_title'); ?>" name="<?php echo $this->get_field_name('pre_app_title'); ?>"><?php echo attribute_escape($pre_app_title); ?></textarea>
+			<br>
+			<label for="<?php echo $this->get_field_id('pre_app_title'); ?>">pre-approved Button Link: </label>
+			<input class="widefat" type="url" id="<?php echo $this->get_field_id('pre_app_url'); ?>" name="<?php echo $this->get_field_name('pre_app_url'); ?>" value = "<?php echo attribute_escape($pre_app_url); ?>" />
 			
 		</p>
 		
@@ -80,6 +89,7 @@ class kstheme_pre_approved_form extends WP_Widget {
 		$instance = array();
 		//$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 		$instance['pre_app_title'] = ( ! empty( $new_instance['pre_app_title'] ) ) ? strip_tags( $new_instance['pre_app_title'] ) : '';
+		$instance['pre_app_url'] = ( ! empty( $new_instance['pre_app_url'] ) ) ? strip_tags( $new_instance['pre_app_url'] ) : '';
 		return $instance;
 		}
 

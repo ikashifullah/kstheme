@@ -13,7 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-widgets' ) ) {
  
 if( is_page(144)) { ?>
 	
-	<div  id="secondary" role="complementary" class="col-md-3 right-sidebar contact-sidebar">
+	<div  id="secondary" role="complementary" class="col-md-3 col-xs-12 right-sidebar contact-sidebar">
 			
 	<?php if ( is_active_sidebar( 'contact-sidebar4' ) ) : ?>
 
@@ -30,7 +30,7 @@ if( is_page(144)) { ?>
 	
 <?php } else { ?>
 
-<div  id="secondary" role="complementary" class="col-md-3 right-sidebar">
+<div  id="secondary" role="complementary" class="col-md-3 col-xs-12 right-sidebar">
 			
 	<?php if ( is_active_sidebar( 'sidebar-widgets' ) ) : ?>
 

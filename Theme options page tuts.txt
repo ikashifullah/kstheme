@@ -1,0 +1,7 @@
+http://colorlabsproject.com/tutorials/create-a-simple-wordpress-admin-panel-part-iii/
+
+http://code.tutsplus.com/articles/how-to-create-a-better-wordpress-options-panel--net-9360
+
+http://www.paulund.co.uk/theme-options-page
+
+http://www.webdesignerdepot.com/2012/02/creating-a-custom-wordpress-theme-options-page/

@@ -23,15 +23,13 @@ class kstheme_pre_approved_form extends WP_Widget {
 		echo $args['before_widget'];
 		$instance['pre_app_title'] = strip_tags( $instance['pre_app_title'] );
 		
-		/*if ( ! empty( $title ) )
-			echo '';//$args['before_title'] . $title . $args['after_title'];
-		*/
+		$url = isset( $instance['pre_app_url'] ) ? $instance['pre_app_url'] : '#';		
 		
-			// This is where you run the code and display the output
-			//echo '<div class="pre-approved-cont"> <p>Fill out our short online application to get pre-approved in minutes </p>'; 
-			echo '<div class="pre-approved-cont"> <p>'.$instance['pre_app_title'].'</p>'; 
-			printf('<div style="text-align:center"><a href="%s" class="pre-approved-btn">%s</a></div>', $instance['pre_app_url'], 'Get Pre-approved');
-			echo '</div>';
+		// This is where you run the code and display the output
+		//echo '<div class="pre-approved-cont"> <p>Fill out our short online application to get pre-approved in minutes </p>'; 
+		echo '<div class="pre-approved-cont"> <p>'.$instance['pre_app_title'].'</p>'; 
+		printf('<div style="text-align:center"><a href="%s" class="pre-approved-btn">%s</a></div>', $url, 'Get Pre-approved');
+		echo '</div>';
 			
 		
 		echo $args['after_widget'];

@@ -91,6 +91,7 @@ add_action( 'after_setup_theme', 'mortgagehouse_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+/* 
 function mortgagehouse_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'mortgagehouse' ),
@@ -103,7 +104,7 @@ function mortgagehouse_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'mortgagehouse_widgets_init' );
-
+*/
 /**
  * Enqueue scripts and styles.
  */
@@ -187,9 +188,9 @@ register_sidebar( array(
 ) );
 
 register_sidebar( array(
-    'name'         => __( 'Footer Sidebar4', 'mortgagehouse' ),
-    'id'           => 'sidebar-foot4',
-    'description'  => __( 'Widgets in this area will be shown on the footer side.', 'mortgagehouse' ),
+    'name'         => __( 'Contact Us Sidebar4', 'mortgagehouse' ),
+    'id'           => 'contact-sidebar4',
+    'description'  => __( 'Widgets in this area will be shown aside only on contact us page.', 'mortgagehouse' ),
     'before_widget' => '<div class="row widgets-wraps">',
 	'after_widget' => '</div>',
     'before_title' => '<div class="widgettitle_wrap col-md-12"><h2 class="widgettitle"><span>',

@@ -13,22 +13,24 @@
  */
 
 get_header(); ?>
+<div class="container">
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main col-md-9" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
-			
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php
+				<?php
+
 					/*
 					 * Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
@@ -48,7 +50,14 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		
+		<?php get_sidebar(); ?>
+		
 	</div><!-- #primary -->
+	
 
-<?php get_sidebar(); ?>
+</div>
+
+<?php get_template_part( 'template-parts/content', 'footertop' ); ?>	
+
 <?php get_footer(); ?>

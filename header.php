@@ -77,4 +77,4 @@
 		  </div>
 		</nav>
 </header>
-<div class="mh-header-banner"></div>				
+<?php putRevSlider("rev-text") ?>

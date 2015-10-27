@@ -7,11 +7,40 @@
  * @package mortgagehouse
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-widgets' ) ) {
 	return;
-}
-?>
+}  
+ 
+if( is_page(144)) { ?>
+	
+	<div  id="secondary" role="complementary" class="col-md-3 right-sidebar contact-sidebar">
+			
+	<?php if ( is_active_sidebar( 'contact-sidebar4' ) ) : ?>
 
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div><!-- #secondary -->
+		<div class="first front-widgets">
+
+			<?php dynamic_sidebar( 'contact-sidebar4' ); ?>
+
+		</div><!-- .first -->
+
+	<?php endif; ?>
+		  
+</div>
+
+	
+<?php } else { ?>
+
+<div  id="secondary" role="complementary" class="col-md-3 right-sidebar">
+			
+	<?php if ( is_active_sidebar( 'sidebar-widgets' ) ) : ?>
+
+		<div class="first front-widgets">
+
+			<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
+
+		</div><!-- .first -->
+
+	<?php endif; ?>
+		  
+</div>
+<?php } ?>

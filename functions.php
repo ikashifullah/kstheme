@@ -10,11 +10,12 @@
  
 @error_reporting(E_ALL);
 @ini_set("log_errors", 1);
-@ini_set("error_log", $_SERVER['DOCUMENT_ROOT']."/error.log");
+
 
 
 $kstheme_appPath = pathinfo( __FILE__ ); // App Path
 $kstheme_site_url = get_site_url(); // Site URL
+@ini_set("error_log", $kstheme_appPath['dirname']."/error.log");
 
 define( 'KSTHEME_APP_PATH', $kstheme_appPath['dirname'] );
 define( 'KSTHEME_SITE_URL', $kstheme_site_url );

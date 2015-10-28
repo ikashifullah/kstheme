@@ -8,7 +8,7 @@ add_action('admin_init', 'register_and_build_fields');
 
 function create_theme_options_page() {
    //add_options_page('Theme Options', 'Theme Options', 'administrator', 'admin-menu.php', 'options_page_fn');
-   add_menu_page( 'Theme Options', 'Theme Options', "manage_options", "KSTheme-options-settings", 'options_page_fn', 'dashicons-art', 58);
+   add_theme_page( 'Theme Options', 'Theme Options', "manage_options", "KSTheme-options-settings", 'options_page_fn', 'dashicons-art', 58);
    
 }
 
@@ -130,6 +130,6 @@ function section_cb() {}
 add_action('admin_head', 'admin_register_head');
 
 function admin_register_head() {
-   $url = get_bloginfo('template_directory') . '/library/admin/options_page.css';
+   $url = get_template_directory_uri() . '/library/admin/options_page.css';
    echo "<link rel='stylesheet' href='$url' />\n";
 }

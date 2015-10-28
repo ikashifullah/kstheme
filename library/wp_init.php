@@ -228,18 +228,18 @@ function setPostType(){
 	
 	// Loan Programs Custom Post Type
 	$program_labels = array( 
-		'name' => _x( 'Loan Programs', 'loan_program' ),
-		'singular_name' => _x( 'Loan Program', 'loan_program' ),
-		'add_new' => _x( 'Add New', 'loan_program' ),
-		'add_new_item' => _x( 'Add New Loan Program', 'loan_program' ),
-		'edit_item' => _x( 'Edit Loan Program', 'loan_program' ),
-		'new_item' => _x( 'New Loan Program', 'loan_program' ),
-		'view_item' => _x( 'View Loan Program', 'loan_program' ),
-		'search_items' => _x( 'Search Loan Programs', 'loan_program' ),
-		'not_found' => _x( 'No loan programs found', 'loan_program' ),
-		'not_found_in_trash' => _x( 'No loan programs found in Trash', 'loan_program' ),
-		'parent_item_colon' => _x( 'Parent Loan Program:', 'loan_program' ),
-		'menu_name' => _x( 'Loan Programs', 'loan_program' ),
+		'name' => _x( 'Loan Programs', 'loan program', 'mortgagehouse' ),
+		'singular_name' => _x( 'Loan Program', 'loan program', 'mortgagehouse' ),
+		'add_new' => _x( 'Add New', 'loan program', 'mortgagehouse' ),
+		'add_new_item' => _x( 'Add New Loan Program', 'loan program', 'mortgagehouse' ),
+		'edit_item' => _x( 'Edit Loan Program', 'loan program', 'mortgagehouse' ),
+		'new_item' => _x( 'New Loan Program', 'loan program', 'mortgagehouse' ),
+		'view_item' => _x( 'View Loan Program', 'loan program', 'mortgagehouse' ),
+		'search_items' => _x( 'Search Loan Programs', 'loan program', 'mortgagehouse' ),
+		'not_found' => _x( 'No loan programs found', 'loan program', 'mortgagehouse' ),
+		'not_found_in_trash' => _x( 'No loan programs found in Trash', 'loan program', 'mortgagehouse' ),
+		'parent_item_colon' => _x( 'Parent Loan Program:', 'loan program', 'mortgagehouse' ),
+		'menu_name' => _x( 'Loan Programs', 'loan program', 'mortgagehouse' ),
 	);
 
 	register_post_type( 'loan_program', 
@@ -253,18 +253,18 @@ function setPostType(){
 	);
 	
 	$services_labels = array( 
-        'name' => _x( 'Services', 'services' ),
-        'singular_name' => _x( 'Service', 'services' ),
-        'add_new' => _x( 'Add New', 'services' ),
-        'add_new_item' => _x( 'Add New Service', 'services' ),
-        'edit_item' => _x( 'Edit Service', 'services' ),
-        'new_item' => _x( 'New Service', 'services' ),
-        'view_item' => _x( 'View Service', 'services' ),
-        'search_items' => _x( 'Search Services', 'services' ),
-        'not_found' => _x( 'No services found', 'services' ),
-        'not_found_in_trash' => _x( 'No services found in Trash', 'services' ),
-        'parent_item_colon' => _x( 'Parent Service:', 'services' ),
-        'menu_name' => _x( 'Services', 'services' ),
+        'name' => _x( 'Services', 'services', 'mortgagehouse' ),
+        'singular_name' => _x( 'Service', 'services', 'mortgagehouse' ),
+        'add_new' => _x( 'Add New', 'services', 'mortgagehouse' ),
+        'add_new_item' => _x( 'Add New Service', 'services', 'mortgagehouse' ),
+        'edit_item' => _x( 'Edit Service', 'services', 'mortgagehouse' ),
+        'new_item' => _x( 'New Service', 'services', 'mortgagehouse' ),
+        'view_item' => _x( 'View Service', 'services', 'mortgagehouse' ),
+        'search_items' => _x( 'Search Services', 'services', 'mortgagehouse' ),
+        'not_found' => _x( 'No services found', 'services', 'mortgagehouse' ),
+        'not_found_in_trash' => _x( 'No services found in Trash', 'services', 'mortgagehouse' ),
+        'parent_item_colon' => _x( 'Parent Service:', 'services', 'mortgagehouse' ),
+        'menu_name' => _x( 'Services', 'services', 'mortgagehouse' ),
     );
 
 	register_post_type( 'services', 
@@ -277,18 +277,18 @@ function setPostType(){
 	);
 	
 	$labels = array(
-		'name' => _x( 'Client Carousel Images', 'carousel_image' ),
-		'singular_name' => _x( 'Carousel Image', 'carousel_image' ),
-		'add_new' => _x( 'Add New', 'carousel_image' ),
-		'add_new_item' => _x( 'Add New Carousel Image', 'carousel_image' ),
-		'edit_item' => _x( 'Edit Carousel Image', 'carousel_image' ),
-		'new_item' => _x( 'New Carousel Image', 'carousel_image' ),
-		'view_item' => _x( 'View Carousel Image', 'carousel_image' ),
-		'search_items' => _x( 'Search Carousel Images', 'carousel_image' ),
-		'not_found' => _x( 'No carousel images found', 'carousel_image' ),
-		'not_found_in_trash' => _x( 'No carousel images found in Trash', 'carousel_image' ),
-		'parent_item_colon' => _x( 'Parent Carousel Image:', 'carousel_image' ),
-		'menu_name' => _x( 'Client Carousel', 'carousel_image' ),
+		'name' => _x( 'Client Carousel Images', 'carousel_image', 'mortgagehouse' ),
+		'singular_name' => _x( 'Carousel Image', 'carousel_image', 'mortgagehouse' ),
+		'add_new' => _x( 'Add New', 'carousel_image', 'mortgagehouse' ),
+		'add_new_item' => _x( 'Add New Carousel Image', 'carousel_image', 'mortgagehouse' ),
+		'edit_item' => _x( 'Edit Carousel Image', 'carousel_image', 'mortgagehouse' ),
+		'new_item' => _x( 'New Carousel Image', 'carousel_image', 'mortgagehouse' ),
+		'view_item' => _x( 'View Carousel Image', 'carousel_image', 'mortgagehouse' ),
+		'search_items' => _x( 'Search Carousel Images', 'carousel_image', 'mortgagehouse' ),
+		'not_found' => _x( 'No carousel images found', 'carousel_image', 'mortgagehouse' ),
+		'not_found_in_trash' => _x( 'No carousel images found in Trash', 'carousel_image', 'mortgagehouse' ),
+		'parent_item_colon' => _x( 'Parent Carousel Image:', 'carousel_image', 'mortgagehouse' ),
+		'menu_name' => _x( 'Client Carousel', 'carousel_image', 'mortgagehouse' ),
 		
 	);
 

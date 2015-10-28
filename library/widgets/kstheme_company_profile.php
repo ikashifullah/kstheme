@@ -82,7 +82,7 @@ class kstheme_company_profile extends WP_Widget {
 		// Widget admin form
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 		<?php 
@@ -104,7 +104,7 @@ class kstheme_company_profile extends WP_Widget {
 			
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( $social_key ); ?>"><?php _e( $social ); ?></label> 
+			<label for="<?php echo $this->get_field_id( $social_key ); ?>"><?php echo $social; ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( $social_key ); ?>" name="<?php echo $this->get_field_name( $social_key ); ?>" type="text" value="<?php echo esc_attr( $social_url ); ?>" />
 		</p>
 		<?php 

@@ -85,6 +85,6 @@
 		</nav>
 </header>
 <?php
-if(function_exists('putRevSlider'))
+if (function_exists('putRevSlider'))
 	putRevSlider("rev-text");
 ?>

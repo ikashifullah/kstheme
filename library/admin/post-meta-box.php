@@ -21,7 +21,7 @@ function loan_program_icon_add_meta_box() {
 		if ( 'page' == $post_type || 'post' == $post_type || 'client-carousel' == $post_type ) {
 			continue;
 		}
-		add_meta_box('loan_program_icon-loan-program-icon', __( 'Loan Program icon', 'loan_program_icon' ), 'loan_program_icon_html', $post_type, 'side', 'default' );
+		add_meta_box('loan_program_icon-loan-program-icon', __( 'Loan Program icon', 'mortgagehouse' ), 'loan_program_icon_html', $post_type, 'side', 'default' );
     }
 }
 add_action( 'add_meta_boxes', 'loan_program_icon_add_meta_box' );
@@ -32,7 +32,7 @@ function loan_program_icon_html( $post) {
 	<p>Add font awesome icon here</p>
 
 	<p>
-		<label for="loan_program_icon_font_awesome_tag"><?php _e( 'font awesome tag', 'loan_program_icon' ); ?></label><br>
+		<label for="loan_program_icon_font_awesome_tag"><?php _e( 'font awesome tag', 'mortgagehouse' ); ?></label><br>
 		<select name = "loan_program_icon_font_awesome_tag"  id="loan_program_icon_font_awesome_tag">
 			<?php 
 			$icons = ebor_icons_list();

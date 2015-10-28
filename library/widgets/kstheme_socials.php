@@ -6,7 +6,12 @@ class US_Widget_Socials extends WP_Widget {
 	{
 		$widget_ops = array('classname' => 'widget_socials', 'description' => 'Social Links');
 		$control_ops = array();
-		$this->WP_Widget('socials', 'KSTheme: Social Links', $widget_ops, $control_ops);
+		parent::__construct(
+            'KSTheme-socials',
+            'KSTheme: Social Links',
+            $control_ops,
+            $widget_ops
+        );
 	}
 
 	function form($instance)

@@ -5,7 +5,7 @@ class kstheme_pre_approved_form extends WP_Widget {
 	function __construct() {
 		
 		parent::__construct(
-		
+
 		'kstheme_pre_approved_form',  // Base ID
 
 		__('KSTheme Pre Approved Form', 'mortgagehouse'), // Name
@@ -71,10 +71,10 @@ class kstheme_pre_approved_form extends WP_Widget {
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 			*/ ?>
 			<label for="<?php echo $this->get_field_id('pre_app_title'); ?>">pre-approved Title: </label>
-			<textarea class="widefat" id="<?php echo $this->get_field_id('pre_app_title'); ?>" name="<?php echo $this->get_field_name('pre_app_title'); ?>"><?php echo attribute_escape($pre_app_title); ?></textarea>
+			<textarea class="widefat" id="<?php echo $this->get_field_id('pre_app_title'); ?>" name="<?php echo $this->get_field_name('pre_app_title'); ?>"><?php echo esc_attr($pre_app_title); ?></textarea>
 			<br>
 			<label for="<?php echo $this->get_field_id('pre_app_title'); ?>">pre-approved Button Link: </label>
-			<input class="widefat" type="url" id="<?php echo $this->get_field_id('pre_app_url'); ?>" name="<?php echo $this->get_field_name('pre_app_url'); ?>" value = "<?php echo attribute_escape($pre_app_url); ?>" />
+			<input class="widefat" type="url" id="<?php echo $this->get_field_id('pre_app_url'); ?>" name="<?php echo $this->get_field_name('pre_app_url'); ?>" value = "<?php echo esc_attr($pre_app_url); ?>" />
 			
 		</p>
 		

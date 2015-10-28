@@ -56,8 +56,15 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand mh-logo" href="#">
+			  <a class="navbar-brand mh-logo" href="<?php echo home_url(); ?>">
+			  <?php 
+			  $options = get_option('KSTheme_options');
+				if(isset($options['logo'])) :
+			  ?>
+			  <img src="<?php echo $options['logo']; ?>" width="300" height="50" />
+			  <?php else : ?>
 				<img src="<?php echo KSTHEME_IMG_DIR.'/mortgage_house_logo.jpg'; ?>" width="300" height="50" />
+			  <?php endif; ?>	
 				<?php /*<img src="<?php echo $javo_tso->get('logo_url', JAVO_IMG_DIR.'/javo-house-logo-v01.png');?>">*/ ?>
 			  </a>
 			</div>
@@ -77,4 +84,7 @@
 		  </div>
 		</nav>
 </header>
-<?php putRevSlider("rev-text") ?>
+<?php
+if(function_exists('putRevSlider'))
+	putRevSlider("rev-text");
+?>

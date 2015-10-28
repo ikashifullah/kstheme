@@ -247,6 +247,8 @@ function setPostType(){
 			'labels' => $program_labels,
 			'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
 			'public' => true,
+			'menu_icon' => 'dashicons-megaphone'
+			
 		)
 	);
 	
@@ -270,6 +272,7 @@ function setPostType(){
 			'labels' => $services_labels,
 			'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
 			'public' => true,
+			'menu_icon'   => 'dashicons-forms'
 		)
 	);
 	
@@ -286,6 +289,7 @@ function setPostType(){
 		'not_found_in_trash' => _x( 'No carousel images found in Trash', 'carousel_image' ),
 		'parent_item_colon' => _x( 'Parent Carousel Image:', 'carousel_image' ),
 		'menu_name' => _x( 'Client Carousel', 'carousel_image' ),
+		
 	);
 
 	register_post_type( 'client-carousel', 
@@ -294,6 +298,7 @@ function setPostType(){
 			'supports' => array( 'title', 'thumbnail','excerpt' ),
 			'taxonomies' => array( 'category' ),
 			'public' => true,
+			'menu_icon' => 'dashicons-id',
 		)
 	);
     

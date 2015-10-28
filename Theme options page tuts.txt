@@ -5,3 +5,7 @@ http://code.tutsplus.com/articles/how-to-create-a-better-wordpress-options-panel
 http://www.paulund.co.uk/theme-options-page
 
 http://www.webdesignerdepot.com/2012/02/creating-a-custom-wordpress-theme-options-page/
+
+http://code.tutsplus.com/tutorials/a-guide-to-the-wordpress-theme-customizer-advanced-controls--wp-33461
+
+http://www.smashingmagazine.com/2013/03/the-wordpress-theme-customizer-a-developers-guide/

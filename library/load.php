@@ -12,4 +12,5 @@ require_once KSTHEME_WG_DIR .'/kstheme_socials.php';
 
 /** Admin Panel **/
 require_once KSTHEME_ADM_DIR."/post-meta-box.php";
+require_once KSTHEME_ADM_DIR."/admin-menu.php";
 ?>

@@ -22,7 +22,7 @@ body { font-size: 14px !important; }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {background-color: #ED7401;}
 .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #ED7401}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #ED7401; }
-}
+
 .dropdown-menu { background-color: #FFFFFF}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #ED7401}
 .navbar-inverse { background-image: none; }
@@ -52,10 +52,20 @@ body { font-size: 14px !important; }
 .youtube-bg >a:hover{background-color: #bb0000 !important;}
 
 /*.mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }*/
+#masthead {position: relative;}
+/* Text Type css */
+.slider-type{  margin:0px auto; position: absolute; top: 200px; }
+.type-wrap{ margin:10px auto; padding:20px; color: #FFFFFF; border-radius:5px; font-size: 50px; }
+/*#typed {border-bottom: 1px solid #fff; border-width: 3px;} */
+#typed-strings { border-bottom: 1px solid #fff; }
+hr {text-align:right; margin: 0 0 0 350px; width: 650px; position: absolute; top: 300px; height: 6px !important;  }
+
+
 .mh-header-banner { height: 273px; }
 .main-content-wrap { min-height: 300px; margin-bottom: 30px; }
 .right-sidebar { min-height: 400px;}
-.footer-top { background: #2f3945; }
+/*.footer-top { background: #2f3945; }*/
+.footer-top { background:url('../images/dubai-skyline.jpg'); }
 .site-footer { background: #192229; padding: 40px 0;}
 .site-footer  p { color: #959ea5; margin: 0;}
 

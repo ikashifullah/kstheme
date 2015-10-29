@@ -85,6 +85,27 @@
 		</nav>
 </header>
 <?php
-if (function_exists('putRevSlider'))
-	putRevSlider("rev-text");
+if (function_exists('putRevSlider')) {
+	putRevSlider ( "rev-text" );
+	if ( is_front_page () ):
+		?>
+	<div class="container">
+		<div class="slider-type">
+			<div class="type-wrap">
+				<span>What we offer: </span>
+				<div id="typed-strings">
+					<p>Typed.js is a <strong>jQuery</strong> plugin.</p>
+					<p>It <em>types</em> out sentences.</p>
+					<p>And then deletes them.</p>
+					<p>Try it out!</p>
+				</div>
+				<span id="typed" style="white-space:pre;"></span>
+			</div>
+			<div id="borderLeft"></div>
+		</div>
+		<hr />
+	</div>
+		<?php
+	endif;
+}
 ?>

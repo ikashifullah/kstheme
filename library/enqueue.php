@@ -7,7 +7,8 @@ function kstheme_load_scripts() {
 	kstheme_get_script('bootstrap.min.js', 'bootstrap', '3.3.5'); 
 	kstheme_get_script('jquery-1.11.3.min.js', 'jquery', '1.11.3'); 
 	kstheme_get_script('owl.carousel.min.js', 'owl-jquery', '1.3.3'); 
-	
+	kstheme_get_script('typed.min.js', 'typed-jquery', '1.0.0');
+
 	// Load all styles
 	kstheme_get_style("bootstrap.min.css", "bootstrap", "3.3.5");
 	wp_enqueue_style( 'font-awesome', KSTHEME_THEME_DIR.'/font-awesome/css/font-awesome.min.css', NULL, '4.4.0');

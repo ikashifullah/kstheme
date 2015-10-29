@@ -11,7 +11,7 @@
 
 ?>
 
-<div class="row site-footer">
+<div class="site-footer">
 		<div class="container">
 		<footer role="contentinfo">
 			<div class="site-info">
@@ -41,7 +41,13 @@
 			autoPlay: true,
 			pagination: false
 		});
- 
+ 		/* Text Typing Script */
+		jQuery("#typed").typed({
+			stringsElement: jQuery("#typed-strings"),
+			typeSpeed : 50,
+			backDelay: 5000,
+		});
+
 	});
 </script>
 </body>

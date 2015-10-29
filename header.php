@@ -94,16 +94,16 @@ if (function_exists('putRevSlider')) {
 			<div class="type-wrap">
 				<span>What we offer: </span>
 				<div id="typed-strings">
-					<p>Typed.js is a <strong>jQuery</strong> plugin.</p>
-					<p>It <em>types</em> out sentences.</p>
-					<p>And then deletes them.</p>
-					<p>Try it out!</p>
+					<p>Personal Finances</p>
+					<p>Business Finances</p>
+					<p>Personal loans</p>
+					<p>Project Finances</p>
+					<p>Machinery Finances</p>
 				</div>
 				<span id="typed" style="white-space:pre;"></span>
 			</div>
-			<div id="borderLeft"></div>
 		</div>
-		<hr />
+		<hr class="typed-line" />
 	</div>
 		<?php
 	endif;

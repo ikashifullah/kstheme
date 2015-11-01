@@ -17,11 +17,13 @@ get_header();
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php if ( 'services' == get_post_type() || 'loan_program' == get_post_type() ): ?>
-				<?php get_template_part( 'template-parts/content', 'custom_post_type' ); ?>
-			<?php else: ?>
-				<?php get_template_part( 'template-parts/content', 'single' ); ?>
-			<?php endif; ?>
+			<?php
+			if ( 'services' == get_post_type() || 'loan_program' == get_post_type() ):
+				get_template_part( 'template-parts/content', 'custom_post_type' );
+			else:
+				get_template_part( 'template-parts/content', 'single' );
+			endif;
+			?>
 			<?php the_post_navigation(); ?>
 
 			<?php

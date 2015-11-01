@@ -31,7 +31,3 @@ require_once KSTHEME_SYS_DIR.'/define.php';
 require_once KSTHEME_SYS_DIR."/load.php";      // loading functions, classes, shotcode, widgets
 require_once KSTHEME_SYS_DIR.'/enqueue.php';
 require_once KSTHEME_SYS_DIR.'/wp_init.php';
-
-
-
-

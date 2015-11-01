@@ -2,10 +2,10 @@ body { font-size: 14px !important; }
 .clear { clear: both;}
 .navbar { margin-bottom: 0 !important; border-radius: 0; border: none; }
 .social-bar { border-bottom: 1px solid #3f4953; }
-.affix { top: 0px; width:100%;}
 #social-bar-links li { border-left: 1px solid #3f4953; }
 #social-bar-links li:last-child{ border-right: 1px solid #3f4953;	margin-right: 5px; }
 .navbar-lower { height: 88px !important; z-index: 1;}
+.affix { top: 0px; width:100%; height: 72px !important;}
 .mh-menu-bar { margin-top: 20px;}
 .mh-logo {padding-top: 0;}
 .navbar-brand {font-size: 16px;}
@@ -54,7 +54,7 @@ body { font-size: 14px !important; }
 /*.mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }*/
 #masthead {position: relative;}
 /* Text Type css */
-.slider-type{  margin:0px auto; position: absolute; top: 200px; background: rgba(0,0,0, 0.3); }
+.slider-type{  margin:0px auto; position: absolute; top: 200px; background: rgba(41,51,61, 0.6); }
 .type-wrap{ margin:10px auto; padding:20px; color: #FFFFFF; border-radius:5px; font-size: 50px; }
 /*#typed {border-bottom: 1px solid #fff; border-width: 3px;} */
 #typed-strings { border-bottom: 1px solid #fff; }
@@ -73,7 +73,7 @@ body { font-size: 14px !important; }
 .site-footer { background: #192229; padding: 40px 0;}
 .site-footer  p { color: #959ea5; margin: 0;}
 
-.footer-menu-cont ul {margin: 0; padding: 0;}
+.footer-menu-cont ul {margin: 0; padding: 0; list-style: none;}
 .footer-menu-cont ul li{float: left; margin-right: 23px;}
 .footer-menu-cont ul li a{ color: #858e95; text-decoration: none; }
 .footer-menu-cont ul li a:hover{ color: #ed9c4e; }
@@ -81,7 +81,7 @@ body { font-size: 14px !important; }
 .footer-top-widgets {padding: 30px 0;}
 .company-intro {color: #9fa9b5; font-size: 13px;}
 
-.contact-info-details { color: #9fa9b5; font-size: 14px; line-height: 25px; margin: 0; padding: 0; }
+.contact-info-details { color: #9fa9b5; font-size: 14px; line-height: 25px; margin: 0; padding: 0; list-style: none;}
 .contact-info-details .fa-lg { font-size: 1.4em; margin-right: 5px; }
 .contact-info-details li a{ color: #9fa9b5; }
 .contact-info-details li a:hover{ color: #ed9c4e; text-decoration: none; }
@@ -94,6 +94,7 @@ body { font-size: 14px !important; }
 .main-intro-heading { font-size: 30px; color: #27ae60; margin: 25px 0 20px 0;}
 .programs-heading, .services-heading {font-size: 18px; color: #27ae60; font-weight: bold; margin-bottom: 25px;}
 .services-heading { margin-top: 25px;}
+.programs-heading { margin-top: 50px; }
 .programs-cont { margin-bottom: 15px; }
 .program-content { }
 .program-icon { font-size: 25px; padding: 0 15px 0 0; vertical-align: top; color: #f55a4e;}
@@ -134,6 +135,11 @@ body { font-size: 14px !important; }
 .kst-finance-programs li a:hover { color: #898989;}
 .kst-finance-programs ul { list-style: circle; margin: 5px; }
 
+.right-sidebar .widgettitle {font-size: 18px; margin-left: 15px;}
+.right-sidebar .menu {border: 2px solid #bbbbbb; border-radius: 15px; padding: 25px;}
+.kstheme-testimonials-widget h3 {color: #cccccc; font-size: 18px;}
+.kstheme-testimonials-widget img {float: left; margin-right: 15px;}
+.kstheme-testimonials-widget p {color: #9fa9b5;}
 
 /* Multi-Level Drop Down Styles Start */
 /*

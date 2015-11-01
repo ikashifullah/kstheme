@@ -39,6 +39,7 @@ function mortgagehouse_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'mortgagehouse' ),
 		'secondary' => esc_html__( 'Footer Menu', 'mortgagehouse' ),
+		'sidebar' => esc_html__( 'Sidebar Menu', 'mortgagehouse' ),
 	) );
 
 	/*
@@ -313,6 +314,28 @@ function setPostType(){
 			'menu_icon' => 'dashicons-id',
 		)
 	);
+
+	$labels = array(
+		'name' => _x('Testimonials', 'post type general name'),
+		'singular_name' => _x('Testimonial', 'post type singular name'),
+		'add_new' => _x('Add New', 'testimonial'),
+		'add_new_item' => __('Add New Testimonial'),
+		'edit_item' => __('Edit Testimonial'),
+		'new_item' => __('New Testimonial'),
+		'view_item' => __('View Testimonial'),
+		'search_items' => __('Search Testimonials'),
+		'not_found' => __('No Testimonials found yet.'),
+		'not_found_in_trash' => __('No Testimonials found in Trash'),
+		'parent_item_colon' => '',
+		'menu_name' => 'Testimonials'
+	);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'menu_icon' => 'dashicons-testimonial',
+		'supports' => array('thumbnail','title', 'editor')
+	);
+	register_post_type('testimonial', $args);
     
 }
 

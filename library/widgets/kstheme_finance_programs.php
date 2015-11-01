@@ -18,13 +18,14 @@ class kstheme_finance_programs extends WP_Widget {
 	// Creating widget front-end
 	public function widget( $args, $instance ) {
 	
-		//$title = apply_filters( 'widget_title', $instance['title'] );
+		$title = apply_filters( 'widget_title', $instance['title'] );
 				
 		echo $args['before_widget'];
 
-
 		$programs = get_taxonomy_hierarchy('program_category');
 		$programs_html = '<div class="kst-finance-cont">';
+		if ( ! empty( $title ) )
+			$programs_html .= '<h4>'.$title.'</h4>';
 		foreach($programs as $program) {
 			$programs_html .= '<ul class="kst-finance-programs">';
 				$programs_html .='<li><a href="' . get_term_link( $program ) . '" title="' . sprintf( __( 'View all post filed under %s', 'mortgagehouse' ), $program->name ) . '">' . $program->name . '</a></li>';

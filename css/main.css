@@ -139,7 +139,23 @@ body { font-size: 14px !important; }
 .right-sidebar .menu {border: 2px solid #bbbbbb; border-radius: 15px; padding: 25px;}
 .kstheme-testimonials-widget h3 {color: #cccccc; font-size: 18px;}
 .kstheme-testimonials-widget img {float: left; margin-right: 15px;}
-.kstheme-testimonials-widget p {color: #9fa9b5;}
+.kstheme-testimonials-widget p, b, strong {color: #9fa9b5;}
+blockquote.style1 {
+  font: 14px/20px italic Times, serif;
+  padding: 8px;
+  margin: 5px;
+  background-image: url('../images/openquote1.gif');
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+  border-left: none;
+  }
+  blockquote.style1 span {
+    	display: block;
+    	background-image: url('../images/closequote1.gif');
+    	background-repeat: no-repeat;
+    	background-position: bottom right;
+  	}
 
 /* Multi-Level Drop Down Styles Start */
 /*

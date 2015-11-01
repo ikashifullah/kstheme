@@ -46,11 +46,11 @@ class kstheme_testimonials extends WP_Widget
         <script type="text/javascript">
             jQuery(document).ready(function(){
                jQuery('#kstheme-testimonials').bxSlider({
-                   adaptiveHeight: true,
                    auto: true,
                    mode: 'vertical',
-                   pass: 10000,
-                   pager: false
+                   speed: 1000,
+                   pager: false,
+				   controls: false
                });
             });
         </script>
@@ -61,10 +61,14 @@ class kstheme_testimonials extends WP_Widget
             echo "<div class='kstheme-testimonials-widget'><div id='kstheme-testimonials'>";
             while (have_posts()) : the_post();
                 echo "<div>";
-                echo "<h3>".get_the_title()."</h3>";
-                the_post_thumbnail('testimonial');
-                //echo "<div style='clear:both;'></div>";
-                echo the_content();
+                
+                echo '<blockquote class="style1"><span>';
+                the_content('');
+				echo '</span></blockquote>';
+				//the_post_thumbnail('testimonial');		
+				echo '<b>'.get_field( 'client_name').'</b><br />';
+				echo '<strong>'.get_field( 'client_designation').'</strong>';
+				echo '<div class="clear"></div>';
                 echo "</div>";
             endwhile;
             echo "</div></div>";

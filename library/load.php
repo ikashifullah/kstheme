@@ -9,6 +9,7 @@ require_once KSTHEME_WG_DIR .'/kstheme_company_profile.php';
 require_once KSTHEME_WG_DIR .'/kstheme_pre_approved_form.php';
 require_once KSTHEME_WG_DIR .'/kstheme_image_upload.php';
 require_once KSTHEME_WG_DIR .'/kstheme_socials.php';
+require_once KSTHEME_WG_DIR .'/kstheme_finance_programs.php';
 
 
 /** Admin Panel **/

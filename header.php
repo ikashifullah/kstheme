@@ -86,8 +86,8 @@
 </header>
 <?php
 if (function_exists('putRevSlider')) {
-	putRevSlider ( "rev-text" );
 	if ( is_front_page () ):
+		putRevSlider ( "rev-text" );
 		?>
 	<div class="container">
 		<div class="slider-type">
@@ -105,7 +105,7 @@ if (function_exists('putRevSlider')) {
 		</div>
 		<hr class="typed-line" />
 	</div>
-		<?php
+	<?php
 	endif;
 }
 ?>

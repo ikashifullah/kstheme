@@ -223,6 +223,7 @@ function setPostType(){
 			'labels' => $labels,
 			'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
 			'public' => true,
+		//	'taxonomies' => array('category')
 		)
 	);
 	
@@ -251,7 +252,18 @@ function setPostType(){
 			
 		)
 	);
-	
+
+	register_taxonomy('program_category', 'loan_program', Array(
+
+		'label' => __( 'Program Category', "mortgagehouse" ),
+
+		//'rewrite' => array( 'slug' => 'property_amenities' ),
+
+		'hierarchical' => true,
+
+	));
+
+
 	$services_labels = array( 
         'name' => _x( 'Services', 'services', 'mortgagehouse' ),
         'singular_name' => _x( 'Service', 'services', 'mortgagehouse' ),

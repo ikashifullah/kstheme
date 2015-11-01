@@ -54,7 +54,7 @@ body { font-size: 14px !important; }
 /*.mh-header-banner { background: url('../images/mortgage_house_header_banner.jpg'); height: 273px; }*/
 #masthead {position: relative;}
 /* Text Type css */
-.slider-type{  margin:0px auto; position: absolute; top: 200px; }
+.slider-type{  margin:0px auto; position: absolute; top: 200px; background: rgba(0,0,0, 0.3); }
 .type-wrap{ margin:10px auto; padding:20px; color: #FFFFFF; border-radius:5px; font-size: 50px; }
 /*#typed {border-bottom: 1px solid #fff; border-width: 3px;} */
 #typed-strings { border-bottom: 1px solid #fff; }
@@ -112,7 +112,7 @@ body { font-size: 14px !important; }
 
 .footer-top-widgets .widgets-wraps { margin-left: 0; margin-right: 40px; margin-top: 0;}
 .footer-top-widgets .widgettitle { color: #efefef; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; margin-top: 5px; margin-left: -15px;}
-.pre-approved-cont { background-color: #e0e0e0; padding: 40px 20px; font-size: 18px; border-radius: 15px; }
+.pre-approved-cont { background-color: #eeeeee; padding: 40px 20px; font-size: 18px; border-radius: 15px; border: 1px solid #bbb; }
 .pre-approved-cont div {margin-top: 35px;}
 .pre-approved-btn { border: 2px solid #41b572; padding: 10px; border-radius: 5px; margin-top color: #404040; transition: background-color 0.5s ease;}
 .pre-approved-btn:visited { color: #404040; }
@@ -127,7 +127,13 @@ body { font-size: 14px !important; }
 
 .contact-sidebar .widgets-wraps:nth-child(2) { background: #2f3945; padding: 20px 20px 30px; color: #fff; border-radius: 10px;}
 
-#rev_slider_1_1_wrapper {z-index: 0 !important; height: 273px !important;}
+#rev_slider_1_1_wrapper {z-index: 0 !important; height: 500px !important;}
+.kst-finance-cont {border: 2px solid #ccc; border-radius: 15px; padding: 20px; font-size: 15px;}
+.kst-finance-programs {margin:0; padding: 0; list-style: disc; list-style-position: inside; padding: 5px;}
+.kst-finance-programs li a { color: #f55a4e;}
+.kst-finance-programs li a:hover { color: #898989;}
+.kst-finance-programs ul { list-style: circle; margin: 5px; }
+
 
 /* Multi-Level Drop Down Styles Start */
 /*

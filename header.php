@@ -109,3 +109,10 @@ if (function_exists('putRevSlider')) {
 	endif;
 }
 ?>
+<br />
+<div class="breadcrumbs container" xmlns:v="http://rdf.data-vocabulary.org/#">
+	<?php if(function_exists('bcn_display'))
+	{
+		bcn_display();
+	}?>
+</div>

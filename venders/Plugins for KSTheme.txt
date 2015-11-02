@@ -1,0 +1,8 @@
+Plugins need to be available for KSTheme.
+
+1. Breadcrumb NavXT
+2. CC Mortgage Calculator
+3. Contact Form 7
+4. Revolution Slider
+5. Ultimate Addons for Visual Composer
+6. WPBakery Visual Composer

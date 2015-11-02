@@ -47,10 +47,14 @@ class kstheme_testimonials extends WP_Widget
             jQuery(document).ready(function(){
                jQuery('#kstheme-testimonials').bxSlider({
                    auto: true,
+				   pause: 10000,
                    mode: 'vertical',
-                   speed: 1000,
+                   speed: 2000,
                    pager: false,
-				   controls: false
+				   controls: false,
+
+				   adaptiveHeight: true,
+				   adaptiveHeightSpeed: 1000
                });
             });
         </script>
@@ -65,9 +69,12 @@ class kstheme_testimonials extends WP_Widget
                 echo '<blockquote class="style1"><span>';
                 the_content('');
 				echo '</span></blockquote>';
+				echo '<p class="client-details">'.get_post_meta(get_the_ID(), 'client_testimonials_details_client_name', true).'</p>';
+				echo '<p class="client-details">'.get_post_meta(get_the_ID(), 'client_testimonials_details_client_designation', true).'</p>';
+				echo '<p class="client-details">'.get_post_meta(get_the_ID(), 'client_testimonials_details_client_company', true).'</p>';
 				//the_post_thumbnail('testimonial');		
-				echo '<b>'.get_field( 'client_name').'</b><br />';
-				echo '<strong>'.get_field( 'client_designation').'</strong>';
+				//echo '<b>'.get_field( 'client_name').'</b><br />';
+				//echo '<strong>'.get_field( 'client_designation').'</strong>';
 				echo '<div class="clear"></div>';
                 echo "</div>";
             endwhile;

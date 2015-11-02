@@ -16,5 +16,6 @@ require_once KSTHEME_WG_DIR .'/kstheme_testimonials.php';
 /** Admin Panel **/
 require_once KSTHEME_ADM_DIR."/post-meta-box.php";
 require_once KSTHEME_ADM_DIR."/admin-menu.php";
+require_once KSTHEME_ADM_DIR."/client_testimonials_meta.php";
 
 ?>

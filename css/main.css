@@ -140,6 +140,7 @@ body { font-size: 14px !important; }
 .kstheme-testimonials-widget h3 {color: #cccccc; font-size: 18px;}
 .kstheme-testimonials-widget img {float: left; margin-right: 15px;}
 .kstheme-testimonials-widget p, b, strong {color: #9fa9b5;}
+.kstheme-testimonials-widget .client-details {color: #ababab; margin: 0 0 0 10px; font-style: italic;}
 blockquote.style1 {
   font: 14px/20px italic Times, serif;
   padding: 8px;

@@ -15,6 +15,15 @@ function kstheme_load_scripts() {
 	kstheme_get_style("main.css", "main-styles");
 	kstheme_get_style("owl.carousel.css", "owl-styles");
 	kstheme_get_style("owl.theme.css", "owl-theme");
+	
+	if(is_page('pre-approval-application')) {
+		kstheme_get_style("calender/datepicker3.css", "datepicker3", "2.0.0");
+		kstheme_get_script('calender/modernizr.js', 'modernizr', '2.8.3');
+		kstheme_get_script('calender/bootstrap-datepicker.js', 'bootstrap-datepicker', '2.0.0');
+		kstheme_get_script('calender/moment.js', 'moment', '2.8.4');
+		kstheme_get_script('calender/bootstrap-datepicker-mobile.js', 'bootstrap-datepicker-mobile', '2.0.0');	
+		kstheme_get_script('jquery.validate.min.js', 'jquery-validate', '1.14.0');
+	}
 }
 
 ?>

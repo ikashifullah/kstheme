@@ -23,6 +23,7 @@ function kstheme_load_scripts() {
 		kstheme_get_script('calender/moment.js', 'moment', '2.8.4');
 		kstheme_get_script('calender/bootstrap-datepicker-mobile.js', 'bootstrap-datepicker-mobile', '2.0.0');	
 		kstheme_get_script('jquery.validate.min.js', 'jquery-validate', '1.14.0');
+		kstheme_get_script('jquery.maskedinput.min.js', 'jquery-mask', '1.4.1');
 	}
 }
 

@@ -103,7 +103,7 @@ if (function_exists('putRevSlider')) {
 				<span id="typed" style="white-space:pre;"></span>
 			</div>
 		</div>
-		<hr class="typed-line" />
+		<hr class="typed-line hidden-xs" />
 	</div>
 	<?php
 	endif;

@@ -20,9 +20,14 @@ if ( isset( $_POST['submitted'] ) ) {
     $headers[] = 'Content-Type: text/html; charset=UTF-8';
     $subject = 'Pre Approve Form: Mortgagehouse Website';
     $body = $html;
-    $sent = wp_mail ( $multiple_recipients, $subject, $body, $headers );
-    if ( true ) { //if($sent) {
-        $response = "<div class='alert alert-success'> A copy of information is send to your email address, and we'll get in touch with you soon!</div>";
+    $errors = array();
+    if(empty($_POST['first_name'])) {
+        $errors[] = "<div class='alert alert-danger'> Please enter your first name!</div>";
+    } else {
+        $sent = wp_mail ( $multiple_recipients, $subject, $body, $headers );
+        if($sent) {
+            $response = "<div class='alert alert-success'> A copy of information is send to your email address, and we'll get in touch with you soon!</div>";
+        }
     }
 }
 

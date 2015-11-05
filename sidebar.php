@@ -13,11 +13,11 @@ if ( ! is_active_sidebar( 'sidebar-widgets' ) ) {
  
 if( is_page(144)) { ?>
 	
-	<div  id="secondary" role="complementary" class="col-md-3 col-xs-12 right-sidebar contact-sidebar">
+	<div  id="secondary" role="complementary" class="col-md-3 col-sm-12 col-xs-12 right-sidebar contact-sidebar">
 			
 	<?php if ( is_active_sidebar( 'contact-sidebar4' ) ) : ?>
 
-		<div class="first front-widgets">
+		<div class="row first front-widgets">
 
 			<?php dynamic_sidebar( 'contact-sidebar4' ); ?>
 
@@ -30,11 +30,11 @@ if( is_page(144)) { ?>
 	
 <?php } else { ?>
 
-<div  id="secondary" role="complementary" class="col-md-3 col-xs-12 right-sidebar">
+<div  id="secondary" role="complementary" class="col-md-3 col-sm-12 col-xs-12 right-sidebar">
 			
 	<?php if ( is_active_sidebar( 'sidebar-widgets' ) ) : ?>
 
-		<div class="first front-widgets">
+		<div class="row first front-widgets">
 
 			<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
 

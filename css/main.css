@@ -101,6 +101,11 @@ body { font-size: 14px !important; }
 .program-title { font-size: 18px; }
 .program-title a:visited, .program-title a{ color: #404040; text-decoration: none;}
 .program-text { font-size: 14px; color: #898989; }
+.program-text ul { padding: 0; list-style: none;}
+.program-text ul li { padding: 0 5px 5px 0;}
+.program-text ul li:before { content: "• "; color: #404040; font-size: 20px;}
+
+
 .program-text p { margin-bottom: 8px;}
 .program-text p a { color: #f55a4e; text-decoration: none; }
 .program-title a:hover, .program-title a:focus, .program-text p a:hover, .program-text p a:focus { color: #898989; }
@@ -122,6 +127,7 @@ body { font-size: 14px !important; }
 .CCM-Widget {background: #b2d9e5;}
 .footer-service-cont{ color: #9fa9b5; border-bottom: 1px solid #676767; margin-top: 17px;}
 .footer-service-cont:last-child{ border: none;}
+.footer-service-cont ul {padding: 0;}
 .footer-service-cont p {margin-bottom: 15px;}
 .footer-service-cont h4 a  { color: #ccc; text-decoration: none; text-transform: uppercase; font-size: 14px; transition: color 0.3s ease;}
 .footer-service-cont h4 a:hover  { color: #fff;}

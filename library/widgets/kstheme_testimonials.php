@@ -54,7 +54,8 @@ class kstheme_testimonials extends WP_Widget
 				   controls: false,
 
 				   adaptiveHeight: true,
-				   adaptiveHeightSpeed: 1000
+				   adaptiveHeightSpeed: 1000,
+				   autoHover : true
                });
             });
         </script>

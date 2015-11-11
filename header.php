@@ -92,13 +92,12 @@ if (function_exists('putRevSlider')) {
 	<div class="container">
 		<div class="slider-type">
 			<div class="type-wrap">
-				<span>What we offer: </span>
+				<span> Key Features: </span>
 				<div id="typed-strings">
-					<p>Personal Finances</p>
-					<p>Business Finances</p>
-					<p>Personal loans</p>
-					<p>Project Finances</p>
-					<p>Machinery Finances</p>
+					<p>100% Funds Available</p>
+					<p>Profit rates starting from 2.45%</p>
+					<p>4 years fixed profit rates</p>
+					<p>Free in-depth eligibility assessment</p>
 				</div>
 				<span id="typed" style="white-space:pre;"></span>
 			</div>

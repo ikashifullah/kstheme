@@ -46,8 +46,28 @@
 			stringsElement: jQuery("#typed-strings"),
 			typeSpeed : 50,
 			backDelay: 5000,
+			loop : true
 		});
+		
+		jQuery(window).scroll(function () {
+			
+			var scroll = jQuery(window).scrollTop();
 
+			if (scroll > 10) {
+			   
+				jQuery('.mh-logo img').css({ width: '150px', height:'78px', 'margin-top' : '-23px' });
+				
+				jQuery('.affix').css({height: '100px !important'});			
+				
+			} else if(scroll < 5) {
+			   
+			   jQuery('.mh-logo img').css({ width: '150px', 'margin-top': '-15px' });
+			   
+			}
+			
+		});
+		jQuery('.mh-logo img').css({ width: '150px', 'margin-top': '-20px', height: '90px' });
+		
 	});
 </script>
 </body>

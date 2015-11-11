@@ -27,7 +27,8 @@ class kstheme_company_profile extends WP_Widget {
 		printf('<p class="contact_us_detail"><a href="%s" title="Mortgagehouse"><img src="%s" alt="Add image alt tag"></a></p>', get_site_url(), KSTHEME_IMG_DIR."/mortgage_house_logo.jpg");	
 		
 		// This is where you run the code and display the output
-		echo '<p class="company-intro">Mel iusto referrentur et. Te paulo possim repudiandae mea, id vim modus labores. Illud oratio phaedrum at sed, eam ut bonorum evertitur. Eos at erant sanctus, nam molestie inimicus expetendis ut. Ius justo veniam homero et, verterem gloriatur interesset et mel. Mei eius<p>';
+		echo '<p class="company-intro">With over 15 years’ experience in banking and finances, our management team has a complete understanding of the best bank products and processes available on the market; therefore we are able to provide a bespoke package which is tailored on a case by case basis.
+			Serving both private and business communities within the UAE with a dynamic approach, Mortgage House has a wealth of resourceful advice plans that guarantees peace of mind for first time buyers and investors alike.<p>';
 		
 		echo '<ul class="contact-info-details">';
 

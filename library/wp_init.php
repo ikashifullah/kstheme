@@ -341,11 +341,11 @@ function setPostType(){
 
 add_shortcode( 'services-shortcode', 'display_services_post_type' );
 
-function display_services_post_type(){
+function display_services_post_type($per_page = 3){
 	$args = array(
 		'post_type' => 'services',
 		'post_status' => 'publish',
-		'posts_per_page' => 4
+		'posts_per_page' => $per_page
 	);
 
 	$service_result = '';
@@ -367,15 +367,26 @@ function display_services_post_type(){
 
 add_shortcode( 'loan-program-shortcode', 'display_loan_program_post_type' );
 
-function display_loan_program_post_type(){
-	$args = array(
-		'post_type' => 'loan_program',
-		'post_status' => 'publish',
-		'posts_per_page' => 4
-	);
+function display_loan_program_post_type($atts){
+
+	// define attributes and their defaults
+    extract( shortcode_atts( array (
+        'type' => 'post',
+        'order' => 'date',
+        'orderby' => 'title',
+        'posts' => -1,
+    ), $atts ) );
+ 
+    // define query parameters based on attributes
+    $options = array(
+        'post_type' => $type,
+        'order' => $order,
+        'orderby' => $orderby,
+        'posts_per_page' => $posts,
+    );
 
 	$loan_result = '';
-	$query = new WP_Query( $args );
+	$query = new WP_Query( $options );
 	if( $query->have_posts() ){
 		
 		while( $query->have_posts() ){

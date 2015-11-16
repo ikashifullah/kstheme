@@ -11,9 +11,9 @@ if ( isset( $_POST['submitted'] ) ) {
     $html = getEmailTemplate ( $_POST );
     global $response;
     if( isset( $_POST['email_work'] ) && isset( $_POST['email_home'] ) ) {
-        $multiple_recipients = array ( 'support@propertyhouseuae.com', $_POST['email_home'], $_POST['email_work'] );
+        $multiple_recipients = array ( 'info@mortgagehouseuae.com', $_POST['email_home'], $_POST['email_work'] );
     } else {
-        $multiple_recipients = array ( 'support@propertyhouseuae.com', $_POST['email_home'] );
+        $multiple_recipients = array ( 'info@mortgagehouseuae.com', $_POST['email_home'] );
     }
 
     $headers[] = 'From: "MortgageHouse Info" <info@mortgagehouseuae.com>';

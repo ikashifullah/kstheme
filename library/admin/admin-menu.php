@@ -130,6 +130,6 @@ function section_cb() {}
 add_action('admin_head', 'admin_register_head');
 
 function admin_register_head() {
-   $url = get_template_directory_uri() . '/library/admin/options_page.css';
+   $url = get_template_directory_uri() . '/library/admin/css/options_page.css';
    echo "<link rel='stylesheet' href='$url' />\n";
 }

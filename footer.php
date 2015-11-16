@@ -57,6 +57,8 @@
 			   
 				jQuery('.mh-logo img').css({ width: '150px', height:'78px', 'margin-top' : '-23px' });
 				
+				
+				
 				jQuery('.affix').css({height: '100px !important'});			
 				
 			} else if(scroll < 5) {

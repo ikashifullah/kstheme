@@ -24,7 +24,7 @@ class kstheme_company_profile extends WP_Widget {
 		/*if ( ! empty( $title ) )
 			echo '';//$args['before_title'] . $title . $args['after_title'];
 		*/
-		printf('<p class="contact_us_detail"><a href="%s" title="Mortgagehouse"><img src="%s" alt="Add image alt tag"></a></p>', get_site_url(), KSTHEME_IMG_DIR."/mortgage_house_logo.jpg");	
+		printf('<p class="contact_us_detail"><a href="%s" title="Mortgagehouse"><img src="%s" alt="Add image alt tag"></a></p>', get_site_url(), KSTHEME_IMG_DIR."/Mortgagehouse_logo.png");	
 		
 		// This is where you run the code and display the output
 		echo '<p class="company-intro">With over 15 years’ experience in banking and finances, our management team has a complete understanding of the best bank products and processes available on the market; therefore we are able to provide a bespoke package which is tailored on a case by case basis.
